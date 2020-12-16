@@ -17,7 +17,8 @@
 
 <p>
   <strong>User image:</strong>
-  <%= @user.user_image %>
+  <p>---</p>
+  <%= image_tag @user.user_image.url %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
